@@ -708,6 +708,11 @@ h3 {
   line-height: 1.4;
 }
 
+.product-text-a {
+  color:#b59f5b;
+
+}
+
 .product-down {  
   display: flex;
   justify-content: space-between; 
