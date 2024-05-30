@@ -19,13 +19,13 @@
   .trend-block-item-1-line:after{
     width: calc(50% - 4px);
     height: 320px;   
-    top: 571px;
+    top: 914px;
   } 
 
   .trend-block-item-2-line:after{
     width: calc(50% - 4px);
     height: 320px;   
-    top: 895px;
+    top: 1238px;
   } 
 }
 
