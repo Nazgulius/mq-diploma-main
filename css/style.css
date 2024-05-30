@@ -87,6 +87,9 @@ a {
   .menu__button {
     display: none;
   }
+  .menu__button-label {
+    display: none;
+  }
 }
 
 h1 {
