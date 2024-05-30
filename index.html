@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-tablet.css" media="(max-width: 1200px)">
+  <link rel="stylesheet" href="css/style-mobile.css" media="(max-width: 640px)">
   <title>MQ Diploma</title>
 </head>
 <body>
   <!-- Верхняя часть страницы -->
   <header class="header">
     <div class="logo-and-nav">
-      <a href="#0">
-        <img src="svg/noemi-logo.svg" alt="logo NOEM" class="logo">
+      <a href="#0" class="logo-a">
+        <img src="svg/noemi-logo.svg" alt="logo NOEMI" class="logo">
       </a>
       <nav class="navigator">
         <ul class="nav-list">
@@ -46,8 +48,14 @@
             </a>
           </li>
         </ul>
+        <button class="menu__button">
+          <span class="menu__button-label">открыть меню</span>
+        </button>
       </nav>
     </div>
+    <a href="#0" class="logo-a-mobile">
+      <img src="svg/noemi-logo.svg" alt="logo NOEMI" class="logo-mobile">
+    </a>
     <h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
   </header>
 
@@ -57,7 +65,7 @@
       Сейчас в трентде
     </h2>
     <div class="trend-blocks">
-      <div class="trend-block-item trend-block-item-1">
+      <div class="trend-block-item trend-block-item-1 trend-block-item-1-line">
         <div class="trend-block-border">
           <ul class="trend-block-list">
             <li class="trend-list-item">
@@ -78,7 +86,7 @@
           </h2>
         </div>
       </div>
-      <div class="trend-block-item trend-block-item-2">
+      <div class="trend-block-item trend-block-item-2 trend-block-item-1-line">
         <div class="trend-block-border">
           <ul class="trend-block-list">
             <li class="trend-list-item">
@@ -94,7 +102,7 @@
           </h2>
         </div>  
       </div>
-      <div class="trend-block-item trend-block-item-3">
+      <div class="trend-block-item trend-block-item-3 trend-block-item-2-line">
         <div class="trend-block-border">
           <ul class="trend-block-list">
             <li class="trend-list-item">
@@ -115,7 +123,7 @@
           </h2>
         </div>        
       </div>
-      <div class="trend-block-item trend-block-item-4">
+      <div class="trend-block-item trend-block-item-4 trend-block-item-2-line">
         <div class="trend-block-border">
           <ul class="trend-block-list">
             <li class="trend-list-item">

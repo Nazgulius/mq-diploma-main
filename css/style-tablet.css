@@ -1,0 +1,199 @@
+
+@media (orientation: landscape) {
+  /* для теста */
+  .title {
+    color: blue;
+  }
+  
+  .trend-block-item:after{
+    top: 567px;
+  } 
+}
+
+@media (orientation: portrait) {
+  /* для теста */
+  .title {
+    color: red;
+  }
+
+  .trend {
+    height: 760px;
+  } 
+
+  .trend-blocks {
+    flex-wrap: wrap;
+  }
+
+  .trend-block-item {  
+    width: calc(50% - 4px);
+  }
+
+  .trend-block-item-1-line:after{
+    width: calc(50% - 4px);
+    height: 320px;   
+    top: 567px;
+  } 
+
+  .trend-block-item-2-line:after{
+    width: calc(50% - 4px);
+    height: 320px;   
+    top: 892px;
+  } 
+}
+
+/*************** Верхняя часть страницы ***************/
+.header{
+  background-image: url("../images/banner-bg-tablet.jpg");
+}
+
+.logo {
+  width: 158px;
+}
+
+.title {
+  width: 78vw;
+  font-size: 40px;
+}
+
+.nav-list {
+  display: none;
+}
+
+.logo-and-nav {
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+
+  width: 609px;
+}
+
+.menu__button {
+  width: 1.4em;
+  height: 1em;  
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.menu__button:before, .menu__button:after {
+  content:"";
+  width: 100%;
+  height: 20%;
+
+  border-radius: 5px;
+  background-color: #ffffff;  
+
+  position: absolute;
+  left: 0;
+}
+
+.menu__button:before {
+  top: 0;
+}
+
+.menu__button:after {
+  bottom: 0;
+}
+
+.menu__button-label {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.1em;  
+
+  border-radius: 5px;
+  background-color: #ffffff;  
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/*************** Основная часть страницы ***************/
+.pre-main {
+  width: 572px;
+  margin: 49px auto 7px;
+}
+
+/*************** Левая часть, основная ***************/
+
+.main {
+  width: 300px;  
+  margin-left: 0;
+}
+
+.articl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.img-news {
+ /* width: 390px;*/
+  width: 100%;
+  margin-right: 0;
+  background-color: #b59f5b;
+}
+
+.text-news {
+  margin-top: 13px;
+}
+/*************** Правая часть страницы ***************/
+
+.aside {
+  min-width: 272px;
+  margin-left: 4.4vw;
+  margin-right: 0;
+}
+/*************** Наши изделия/продукт ***************/
+.products {
+  height: 1005px;
+  width: 90vw;  
+
+  margin-bottom: 50px;  
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.product-block {
+  flex-wrap: wrap;
+  width: 90vw;
+  gap: 21px;
+}
+
+.product-item {
+  width: calc((90vw / 2) - 21px);  
+  height: 457px;
+}
+
+.product-item-border { 
+  margin-top: 192px;
+}
+
+.product-item-img1{
+  background-image: url("../images/shop-item-tablet1.jpg");  
+}
+
+.product-item-img2{
+  background-image: url("../images/shop-item-tablet2.jpg"); 
+}
+
+.product-item-img3{
+  background-image: url("../images/shop-item-tablet3.jpg"); 
+}
+
+/*************** Подвал страницы ***************/
+.address {
+  /*width: 698px;*/
+  width: 100vw;
+}
+
+.copyright {
+  margin-top: 45px;
+  margin-bottom: 36px;
+}
