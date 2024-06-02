@@ -15,18 +15,6 @@
   .trend-block-item {  
     width: calc(50% - 4px);
   }
-
-  .trend-block-item-1-line:after{
-    width: calc(50% - 4px);
-    height: 320px;   
-    top: 914px;
-  } 
-
-  .trend-block-item-2-line:after{
-    width: calc(50% - 4px);
-    height: 320px;   
-    top: 1238px;
-  } 
 }
 
 @media (orientation: portrait) {
@@ -45,30 +33,6 @@
   .trend-block-item {  
     width: calc(100% - 4px);
   }  
-
-  .trend-block-item-1:after{
-    width: calc(100% - 4px);
-    height: 320px;   
-    top: 914px;
-  } 
-  
-  .trend-block-item-2:after{
-    width: calc(100% - 4px);
-    height: 320px;   
-    top: 1238px;
-  } 
-
-  .trend-block-item-3:after{
-    width: calc(100% - 4px);   
-    height: 320px;   
-    top: 1562px;
-  } 
-  
-  .trend-block-item-4:after{
-    width: calc(100% - 4px);  
-    height: 320px;   
-    top: 1886px;
-  } 
 }
 
 /*************** Верхняя часть страницы ***************/
@@ -168,24 +132,15 @@
 }
 
 .product-item {
-  width: 90vw;
-  height: 523px;
+  width: 90vw;  
+}
+
+.product-item:nth-child(n + 2) {
+  margin-top: 250px;
 }
 
 .product-item-border { 
-  margin-top: 256px;
-}
-
-.product-item-img1{
-  background-image: url("../images/shop-item-mobile1.jpg");  
-}
-
-.product-item-img2{
-  background-image: url("../images/shop-item-mobile2.jpg"); 
-}
-
-.product-item-img3{
-  background-image: url("../images/shop-item-mobile3.jpg"); 
+  top: 200px;
 }
 
 /*************** Подвал страницы ***************/
