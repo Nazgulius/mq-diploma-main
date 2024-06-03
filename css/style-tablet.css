@@ -1,17 +1,5 @@
 
-@media (orientation: landscape) {
-  /* для теста */
-  .title {
-    color: blue;
-  } 
-}
-
-@media (orientation: portrait) {
-  /* для теста */
-  .title {
-    color: red;
-  }
-
+@media (orientation: portrait) {  
   .trend {
     height: 760px;
   } 
@@ -43,16 +31,7 @@
   display: none;
 }
 
-.logo-and-nav {
-  z-index: 0;
-  display: flex;
-  justify-content: space-between;
-
-  width: 609px;
-}
-
 .menu__button {
-
   background-color: transparent;
   cursor: pointer;
 }
@@ -69,14 +48,14 @@
 
 /*************** Основная часть страницы ***************/
 .pre-main {
-  width: 572px;
+  
   margin: 49px auto 7px;
 }
 
 /*************** Левая часть, основная ***************/
 
 .main {
-  width: 300px;  
+  width: 100%;  
   margin-left: 0;
 }
 
@@ -88,7 +67,6 @@
 }
 
 .img-news {
- /* width: 390px;*/
   width: 100%;
   margin-right: 0;
   background-color: #b59f5b;

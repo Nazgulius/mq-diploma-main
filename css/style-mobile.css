@@ -1,9 +1,4 @@
 @media (orientation: landscape) {
-  /* для теста */
-  .title {
-    color: orange;
-  }
-
   .trend {
     height: 760px;
   } 
@@ -18,11 +13,6 @@
 }
 
 @media (orientation: portrait) {
-  /* для теста */
-  .title {
-    color: yellow;
-  }
-
   .trend {
     height: 1412px;
   } 
@@ -49,10 +39,6 @@
 
 .logo-and-nav{
   flex-direction: row-reverse;
-}
-
-.logo-and-nav {
-  width: 90vw;
 }
 
 .logo-a-mobile {
@@ -118,7 +104,7 @@
 
 
 .products {
-  height: 1517px;
+  height: 1690px;
   width: 90vw;
   margin-bottom: 42px;
   margin-left: 5vw;
@@ -140,7 +126,7 @@
 }
 
 .product-item-border { 
-  top: 200px;
+  top: 254px;
 }
 
 /*************** Подвал страницы ***************/
