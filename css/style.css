@@ -762,6 +762,31 @@ h3 {
   background-color: #323232;
 }
 
+.product-a-botton {
+  width: 140px;
+  height: 48px;
+  text-align: center;
+   
+  
+
+  text-transform: uppercase;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+
+  background-color: #b59f5b;
+  color: #fff;
+  border: 0;
+}
+
+.product-a-button:hover {
+  background-color: #323232;
+}
+
+.product-a-botton-text {
+  text-align: center;
+  align-items: center;
+}
+
 
 
 /*************** Подвал страницы ***************/

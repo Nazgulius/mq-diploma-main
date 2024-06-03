@@ -118,7 +118,7 @@
 
 
 .products {
-  height: 1692px;
+  height: 1517px;
   width: 90vw;
   margin-bottom: 42px;
   margin-left: 5vw;
@@ -136,7 +136,7 @@
 }
 
 .product-item:nth-child(n + 2) {
-  margin-top: 250px;
+  margin-top: 235px;
 }
 
 .product-item-border { 
