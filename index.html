@@ -538,7 +538,7 @@
     </div>
   </div>
 
-  <!-- Подвал страницы -->
+  <!--------------- Подвал страницы --------------->
   <footer class="footer">
     <address class="address">
       <ul class="address-list">
@@ -561,6 +561,47 @@
     </address>
     <p class="copyright">Copyright © 2009–2019 City Blog LLC.</p>
   </footer>
+
+  <!-------------  pop-up  ---------------->
+  <dialog
+    open="open"
+    id="closeMe"
+    aria-labelledby="fidbeck-title"
+  >
+    <div class="backdrop">
+      <h2 id="fidbeck-title">Ваш фидбек</h2>
+      <form method="dialog">
+        <label class="form-label">
+          <span class="visually-hidden"></span>
+          <span class="">Как часто вы заходите на сайт?</span>
+          <input class="submit" type="" placeholder="Почти каждый день">
+        </label>
+
+        <fieldset>
+          <legend>Вы подписаны на e-mail рассылку?</legend>
+          <label>
+            <input type="radio" name="level">
+            Да
+          </label>
+          <label>
+            <input type="radio" name="level"checked>
+            Нет
+          </label>          
+        </fieldset>
+
+        <label class="form-label">
+          <span class="visually-hidden"></span>
+          <span class="">Расскажите, какой контект вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="" type="" placeholder="Может, больше рецептов?"></textarea>
+        </label>
+
+        <button class="button-send" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+    
+  </dialog>
 </body>
 </html>
 
