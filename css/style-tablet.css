@@ -48,7 +48,6 @@
 
 /*************** Основная часть страницы ***************/
 .pre-main {
-  
   margin: 49px auto 7px;
 }
 
@@ -75,6 +74,19 @@
 .text-news {
   margin-top: 13px;
 }
+
+.articl-line {
+  width: 100%;
+  margin: 24px auto 0;
+  border: 3px solid #eeeeee;
+}
+
+@media (min-width: 641px) {
+  .line-hide {
+    display: none;
+  }
+}
+
 /*************** Правая часть страницы ***************/
 
 .aside {
@@ -112,7 +124,6 @@
 
 /*************** Подвал страницы ***************/
 .address {
-  /*width: 698px;*/
   width: 100vw;
 }
 

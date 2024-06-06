@@ -178,6 +178,7 @@
           </div>
           <p class="excerpt">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
         </div>
+        <hr class="articl-line">
       </articl>
       <articl class="articl">
         <img src="images/last-post2.jpg" alt="На песчаном береу моря девушка стоит на голове в позе йоги" class="img-news">
@@ -205,6 +206,7 @@
           </div>
           <p class="excerpt">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
         </div>
+        <hr class="articl-line">
       </articl>
       <articl class="articl">
         <img src="images/last-post3.jpg" alt="В толпе, девушка спиной сидит на плечах" class="img-news">
@@ -224,6 +226,7 @@
           <p class="excerpt">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
           <p class="excerpt excerpt-two">Мы составили список лучших летних фестивалей по всему миру.</p>
         </div>
+        <hr class="articl-line">
       </articl>
       <articl class="articl">
         <img src="images/last-post4.jpg" alt="Еда в тарелках на деревянном столе, в доме." class="img-news">
@@ -251,6 +254,7 @@
           </div>
           <p class="excerpt">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
         </div>
+        <hr class="articl-line">
       </articl>
       <articl class="articl">
         <img src="images/last-post5.jpg" alt="На стуле лежит подушка с надписью HANG OUT STOP и стрелка вниз" class="img-news">
@@ -279,6 +283,7 @@
           </div>
           <p class="excerpt">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
         </div>
+        <hr class="articl-line line-hide">
       </articl>
     </main>
     
@@ -563,14 +568,10 @@
   </footer>
 
   <!-------------  pop-up  ---------------->
-  <dialog
-    open="open"
-    id="closeMe"
-    aria-labelledby="fidbeck-title"
-  >
-    <div class="backdrop">
-      <h2 id="fidbeck-title">Ваш фидбек</h2>
-      <form method="dialog">
+  <div class="popup"  >
+    <div class="popup-container">
+      <h2 class="fidbeck-title">Ваш фидбек</h2>
+      <form >
         <label class="form-label">
           <span class="visually-hidden"></span>
           <span class="">Как часто вы заходите на сайт?</span>
@@ -586,7 +587,7 @@
           <label>
             <input type="radio" name="level"checked>
             Нет
-          </label>          
+          </label>
         </fieldset>
 
         <label class="form-label">
@@ -595,13 +596,11 @@
           <textarea class="" type="" placeholder="Может, больше рецептов?"></textarea>
         </label>
 
-        <button class="button-send" type="submit">
-          Отправить
-        </button>
+        <button class="button-send" type="submit">Отправить</button>
       </form>
-    </div>
-    
-  </dialog>
+      <button class="popup-close" type="button">Закрыть окно</button> 
+    </div> 
+  </div>
 </body>
 </html>
 
