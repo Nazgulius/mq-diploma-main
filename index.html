@@ -50,7 +50,7 @@
         </ul>
         <div class="menu__button">
           <span class="menu__button-label"></span>
-        </button>
+        </div>
       </nav>
     </div>
     <a href="#0" class="logo-a-mobile">
@@ -571,34 +571,37 @@
   <div class="popup"  >
     <div class="popup-container">
       <h2 class="fidbeck-title">Ваш фидбек</h2>
-      <form >
-        <label class="form-label">
-          <span class="visually-hidden"></span>
-          <span class="">Как часто вы заходите на сайт?</span>
+      <form class="form-popup">
+        <label class="form-label-1">          
+          <span class="fidbeck-text">Как часто вы заходите на сайт?</span>
           <input class="submit" type="" placeholder="Почти каждый день">
         </label>
 
-        <fieldset>
-          <legend>Вы подписаны на e-mail рассылку?</legend>
-          <label>
-            <input type="radio" name="level">
+        <fieldset class="form-label-2">
+          <legend class="fidbeck-text">Вы подписаны на e-mail рассылку?</legend>
+          <label class="fidbeck-text fidbeck-radio">
+            <input type="radio" name="level" class="fidbeck-radio-btn custom-radio">
+            <span class="custom-radio-btn"></span>
             Да
           </label>
-          <label>
-            <input type="radio" name="level"checked>
+          <label class="fidbeck-text fidbeck-radio">
+            <input type="radio" name="level" class="fidbeck-radio-btn custom-radio" checked>
+            <span class="custom-radio-btn"></span>
             Нет
           </label>
         </fieldset>
 
-        <label class="form-label">
-          <span class="visually-hidden"></span>
-          <span class="">Расскажите, какой контект вы хотели бы видеть на нашем сайте?</span>
-          <textarea class="" type="" placeholder="Может, больше рецептов?"></textarea>
+        <label class="form-label-3">          
+          <span class="fidbeck-text">Расскажите, какой контект вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="fidbeck-text fidbeck-area submit" type="" placeholder="Может, больше рецептов?"></textarea>
         </label>
 
         <button class="button-send" type="submit">Отправить</button>
       </form>
-      <button class="popup-close" type="button">Закрыть окно</button> 
+      <button class="popup-close" type="button"></button> 
+      <div class="popup-close-button">
+        <span class="popup-close-button-label"></span>
+      </div>
     </div> 
   </div>
 </body>

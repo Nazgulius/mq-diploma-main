@@ -840,22 +840,19 @@ h3 {
   position: fixed;
   top: 0px; 
 }
-/*
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-*/
-.popup-container {  
+
+.popup-container {    
+  position: relative;
+  width: 330px;
+  height: 550px;
+  padding: 20px;
   margin: 40px auto 0px auto;
-  width: 300px;
-  height: 500px;
-  padding:10px;
-  background-color: #ffffff;
-  border-radius:5px;
+  background-color: #ffffff;  
   box-shadow: 0px 0px 10px #000;
 }
 
 .fidbeck-title {
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-family: Open Sans, sans-serif;
   font-size: 20px;
@@ -873,21 +870,123 @@ dialog::backdrop {
   margin: 10px auto 0;
 }
 
-.popup-close {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  text-indent: -9999px;
-  cursor: pointer;  
+.fidbeck-text{  
+  font-family: Open Sans, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
 }
 
+.form-label-2 {
+  border: none;
+  margin: 20px 0;
+  padding-inline-start: 0;
+  position: relative;
+}
+
+.submit {
+  margin-top: 10px;
+}
+
+.fidbeck-radio {
+  margin-right: 10px;  
+  user-select: none;
+}
+
+.fidbeck-radio-btn {
+  display: none;
+}
+
+ /* Рисуем внешний круг радиокнопки*/
+ .custom-radio-btn {
+  position: relative; 
+  display: inline-block; 
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #b59f5b; 
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+
+/* Рисуем внутренний круг */
+.custom-radio-btn::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  
+  border-radius: 50%;  
+  margin-right: 5px;
+  position: absolute;
+  left: 10%;
+  top: 14%;
+}
+
+.fidbeck-radio-btn:checked + .custom-radio-btn::before { 
+  background-color: #b59f5b;
+}
+
+
+/* ********* ********** */
+.fidbeck-area {
+  margin-top: 10px;
+  padding-top: 15px;
+  width: 100%;
+  height: 150px;  
+  resize: none;
+}
+
+.button-send {
+  width: 100%;
+  height: 48px;
+
+  text-transform: uppercase;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+
+  background-color: #b59f5b;
+  color: #fff;
+  border: 0;
+}
+/*
+.popup__close {   
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: block;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --%3E%3Csvg width='201px' height='201px' viewBox='-2.4 -2.4 28.80 28.80' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'/%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.336'/%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 6H20M4 12H20M4 18H20' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}*/
+
+.popup-close-button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.popup-close-button-label {    
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --%3E%3Csvg width='201px' height='201px' viewBox='-2.4 -2.4 28.80 28.80' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'/%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.336'/%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 6H20M4 12H20M4 18H20' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+/*
 .popup__close:before, .popup__close:after {
   content: "";
-  background-color: #ffffff;
+  background-color: #ec0d0d;
   border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
+  cursor: pointer;  
 }
 
 .popup__close:before {
@@ -896,4 +995,4 @@ dialog::backdrop {
 
 .popup__close:after {
   transform: translate(-50%, -50%) rotate(-45deg);
-}
+}*/
